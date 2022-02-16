@@ -14,6 +14,7 @@
 		0C1124E727BC4CC0008AAC13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1124E327BC4CC0008AAC13 /* CardView.swift */; };
 		0C1124E827BC4CC0008AAC13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1124E427BC4CC0008AAC13 /* ContentView.swift */; };
 		0C1124E927BC4CC0008AAC13 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1124E527BC4CC0008AAC13 /* GameState.swift */; };
+		0C1124EB27BD220F008AAC13 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1124EA27BD220F008AAC13 /* DeckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0C1124E327BC4CC0008AAC13 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0C1124E427BC4CC0008AAC13 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C1124E527BC4CC0008AAC13 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = SOURCE_ROOT; };
+		0C1124EA27BD220F008AAC13 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0C1124E127BC4CC0008AAC13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C1124EA27BD220F008AAC13 /* DeckView.swift */,
 				0C1124E227BC4CC0008AAC13 /* HandView.swift */,
 				0C1124E327BC4CC0008AAC13 /* CardView.swift */,
 				0C1124E427BC4CC0008AAC13 /* ContentView.swift */,
@@ -159,6 +162,7 @@
 				0C1124E927BC4CC0008AAC13 /* GameState.swift in Sources */,
 				0C1124E827BC4CC0008AAC13 /* ContentView.swift in Sources */,
 				0C1124E627BC4CC0008AAC13 /* HandView.swift in Sources */,
+				0C1124EB27BD220F008AAC13 /* DeckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

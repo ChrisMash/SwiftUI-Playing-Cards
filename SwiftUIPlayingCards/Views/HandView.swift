@@ -10,7 +10,7 @@ import SwiftUI
 // A view to represent the cards in a hand
 struct HandView: View {
     
-    let hand: Hand
+    @ObservedObject var hand: Hand
     let namespace: Namespace.ID
     let onCardTap: (Card) -> Void
     

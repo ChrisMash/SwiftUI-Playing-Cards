@@ -22,12 +22,10 @@ class Hand: ObservableObject, Identifiable {
 // A representation of the current state of the game,
 // including which cards each player has and the deck
 // of cards that can be picked up from
-class GameState: ObservableObject {
+class GameState {
     
     private(set) var deck = Hand()
     private(set) var hands = [Hand]()
-    
-    private var cancellables = [Any]()
     
     init() {
         // Fill the deck with 20 cards, shuffled
@@ -48,11 +46,6 @@ class GameState: ObservableObject {
             }
             
             hands.append(hand)
-            
-            // Report changes to the hand as part of the GameState
-            cancellables.append(hand.objectWillChange.sink { [weak self] _ in
-                self?.objectWillChange.send()
-            })
         }
     }
     

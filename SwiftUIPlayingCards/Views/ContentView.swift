@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject private var gameState = GameState()
+    private var gameState = GameState()
     @Namespace private var animation
     
     var body: some View {
@@ -22,14 +22,8 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
             
             // Draw the deck of cards players can pick up from
-            ZStack {
-                // Just need to draw the last two so that the transition of card
-                // from the hand back to the deck results in the old top card being
-                // rendered as the new top card animates in
-                ForEach(gameState.deck.cards.suffix(2)) {
-                    CardView(card: $0, namespace: animation)
-                }
-            }
+            DeckView(deck: gameState.deck,
+                     namespace: animation)
             
             // Draw each player's hand of cards
             ForEach(gameState.hands) { hand in
